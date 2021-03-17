@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign In</title>
+    {{>header}}
+</head>
+<body>
+    {{>navbar}}
+     <div class="loginpage">
+        <form action="/signin" method="post" class="loginform">
+          <h2>Welcome Sign In</h2>
+          <div class="maindiv">
+              <div class="loginimg">
+                <img src="imgage/signin.jpg" alt="loding">
+              </div>
+              <div class="inputdiv">
+              <input type="text" placeholder="Enter Email" name="email" id="email" class="textfill">
+              <input type="text" placeholder="Enter Password" name="password" id="password" class="textfill">
+              {{!-- <input type="button" value="Sign In" id="signinbutton" class="signin"> --}}
+              <button type="submit" id="signinbutton" class="signin">Sign In</button>
+              </div>
+
+              <div class="help">
+                <input type="checkbox" name="checkbox" class="Checkbox" id="check" value="yes">
+                <span>Remember Me</span> 
+                <a href="">Need Help?</a>
+              </div>
+          </div>
+         <a href="/register" class="creataccount">Create On Account</a>
+        </form>
+       
+    </div>
+     <hr>
+    {{>footer}}
+</body>
+</html>

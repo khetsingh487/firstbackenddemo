@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    {{>header}}
+    
+</head>
+<body>
+    {{>navbar}}
+    <div class="register">
+        <form action="/register" method="post" name="myname">
+           <div class="name"> <input type="text" placeholder="Enter username" name="name" id="name"></div>
+           <div class="email"><input type="text" placeholder="Enter Email" name="email" id="email"></div>
+           <div class="phone"><input type="text" placeholder="Phone Number" name="phone" id="phone"></div>
+           <div class="address"><input type="text" placeholder="Enter Address" name="address" id="address"></div>
+           <div class="password"><input type="text" placeholder="Pssword" name="password" id="password"></div>
+           <div class="cpassword"><input type="text" placeholder="conform Password" name="cpassword" id="cpassword"></div>
+           <div class="button">
+           <button type="submit">Submit</button>
+           <button type="reset">Reset</button>
+           </div>
+        </form>
+    </div>
+    <div class="border"></div>
+    {{>footer}}
+</body>
+</html>
